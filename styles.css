@@ -88,7 +88,6 @@ input:focus{
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     padding:0 16px;
-    line-height: 48px;
     width: 364px;
     height: 48px;
 }
@@ -147,9 +146,9 @@ hr{
                                 /*Footer*/
 footer{
 background-color: #fff;
-/*height: fit-content;*/
+
 padding: 20px 0px 0px;
-min-width: 100%;
+width: 100%;
  }
  ul{
     max-width: 1000px;
@@ -169,19 +168,40 @@ min-width: 100%;
    li{
     margin-right: 15px;
    }
-                    /*RESPONSIVENESS*/
                     /*medium devices*/
  
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  @media only screen  and (max-width: 1199px) { 
     .main-area{
         grid-template-columns: 1fr;
         width: 100%;
         padding: 20px;
-        align-items: center;
+        align-items: center; 
         height: auto;
+        margin-left: 0;
     }
-    .branding,.panel {
-      margin: 10px 0;
+    .branding {
+     
+    display: grid;
+     justify-content: center; 
+   align-items: center; 
+   width: 100%;
+   margin-left: 60px;
+     
+    }
+    .container-2{
+       /* margin: 10px 0; */
+      align-items: center;
+      
+    }
+    .whole{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+    form{
+      align-items: center;
     }
   
     footer {
@@ -194,9 +214,11 @@ min-width: 100%;
      grid-template-columns: 1fr;
       width: 100%;
       margin-left: 0;
-      padding: 0; 
+      padding: 10px; 
       align-items: center;
-      height: auto;
+      justify-content: center;
+      /* height: auto; */
+     
     }
   
     .branding {
@@ -210,17 +232,23 @@ min-width: 100%;
     .branding img,.branding p {
       margin: 0;
       width: auto;
+      align-items: center;
     }
   
-    .panel {
-      width: 100%;
+    .container-2 {
+      width: 97%;
       margin: 0;
-      padding: 10px; 
+      padding: 30px; 
+     
+    }.input{
+      width: 100%;
     }
   
     
     footer {
-      height: 100vh; 
+      height: 100; 
+       width: 100vw; 
+      padding: 20px;
     }
   
     input,.Log-in-button {
