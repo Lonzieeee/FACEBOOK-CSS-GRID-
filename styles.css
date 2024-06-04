@@ -246,9 +246,7 @@ width: 100%;
   
     
     footer {
-      height: 100; 
-       width: 100vw; 
-      padding: 20px;
+      display: none;
     }
   
     input,.Log-in-button {
